@@ -1,32 +1,11 @@
-collections:
-  authors:
-    output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
 # Jekyll configuration
 title: Jerome Heng
-email: your-email@example.com
-description: Creative Developer Portfolio
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kraftedcheese.github.io" # the base hostname & protocol for your site
+email: jeromehenghaoxiang@gmail.com
+description: AI Engineer & Computational Linguist Portfolio
+baseurl: "" 
+url: "https://kraftedcheese.github.io"
 
 # Build settings
-# theme: jekyll-theme-cayman # Commented out to use custom styles
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -39,4 +18,6 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
-  - vendor/ruby/
+  - vendor/ruby/
+  - .history
+  - .jekyll-cache
