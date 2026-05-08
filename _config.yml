@@ -18,10 +18,25 @@ defaults:
     values:
       layout: "default"
 
+# Jekyll configuration
+title: Jerome Heng
+email: your-email@example.com
+description: Creative Developer Portfolio
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kraftedcheese.github.io" # the base hostname & protocol for your site
+
+# Build settings
+# theme: jekyll-theme-cayman # Commented out to use custom styles
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-remote_theme: kraftedcheese/forty-jekyll-theme
-theme: jekyll-theme-cayman
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

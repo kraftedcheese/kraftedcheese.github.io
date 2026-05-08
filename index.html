@@ -1,14 +1,238 @@
 ---
-layout: default
-title: Home
 ---
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <h1>{{ "Hello World!"" | downcase }}</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerome Heng | AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-image {
+            background-color: var(--primary-color) !important;
+            padding: 0 !important;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .date-badge {
+            background-color: var(--text-color);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 800;
+            display: inline-block;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+
+        .bento-hero { grid-column: span 8; padding: 3rem !important; }
+        .bento-photo { grid-column: span 4; }
+        .bento-skills { grid-column: span 4; padding: 2.5rem !important; }
+        .bento-experience { grid-column: span 8; padding: 2.5rem !important; }
+
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-link:hover .card {
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0px 0px var(--text-color);
+            border-color: var(--primary-color);
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.25rem 0.6rem;
+            background-color: #f1f5f9;
+            color: var(--text-color);
+            border: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 1000px) {
+            .bento-hero, .bento-photo, .bento-skills, .bento-experience {
+                grid-column: span 12;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header style="margin-bottom: 4rem; display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo" style="background-color: var(--text-color); color: white; padding: 0.5rem 1rem; font-weight: 900;">JEROME.AI</div>
+            <nav>
+                <a href="#about" class="neo-button" style="background-color: white; font-size: 1rem;">ABOUT</a>
+                <a href="#projects" class="neo-button" style="background-color: var(--primary-color); color: white; font-size: 1rem;">PROJECTS</a>
+            </nav>
+        </header>
+
+        <div class="bento-grid">
+            <!-- HERO -->
+            <div class="neo-box bento-hero" style="background-color: white;">
+                <div class="date-badge" style="background-color: var(--accent-color);">SINGAPORE ➔ STUTTGART</div>
+                <h1 style="font-size: 4rem; line-height: 1; margin-bottom: 1.5rem; letter-spacing: -0.02em;">AGENTIC AI & COMP. LINGUISTICS.</h1>
+                <p style="font-size: 1.3rem; font-weight: 400; color: #64748b; max-width: 90%; line-height: 1.6;">Hi, I'm Jerome. I build intelligent systems that understand the world. Currently at the University of Stuttgart, formerly DSTA.</p>
+                <div style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+                    <a href="https://linkedin.com/in/jeromehenghx" class="neo-button" style="background-color: var(--text-color); color: white;">LINKEDIN</a>
+                    <a href="https://github.com/kraftedcheese" class="neo-button" style="background-color: white;">GITHUB</a>
+                </div>
+            </div>
+
+            <!-- PHOTO -->
+            <div class="neo-box bento-photo hero-image" style="border-color: var(--text-color);">
+                <img src="assets/images/IMG_20260411_102827.jpg" alt="Jerome Heng">
+            </div>
+
+            <!-- SKILLS -->
+            <div class="neo-box bento-skills" style="background-color: var(--text-color); color: white;">
+                <h2 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 1.5rem; letter-spacing: 0.05em;">TECH STACK</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                    <span class="badge" style="background-color: #334155; color: white; border: none;">Python</span>
+                    <span class="badge" style="background-color: #334155; color: white; border: none;">LLMs</span>
+                    <span class="badge" style="background-color: #334155; color: white; border: none;">PyTorch</span>
+                    <span class="badge" style="background-color: #334155; color: white; border: none;">Docker</span>
+                    <span class="badge" style="background-color: #334155; color: white; border: none;">TypeScript</span>
+                    <span class="badge" style="background-color: #334155; color: white; border: none;">FastAPI</span>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="neo-box bento-experience" style="background-color: white;">
+                <h2 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 2rem;">EXPERIENCE</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <div style="font-weight: 900; font-size: 1.1rem; color: var(--primary-color);">DSTA</div>
+                        <div style="font-size: 0.8rem; font-weight: 700; color: #94a3b8; margin-bottom: 0.8rem; text-transform: uppercase;">AI ENGINEER • 2022-2025</div>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #475569;">Building national security tech with LLMs, RAG, and Agentic AI prototypes.</p>
+                    </div>
+                    <div>
+                        <div style="font-weight: 900; font-size: 1.1rem; color: var(--primary-color);">ONLOOP</div>
+                        <div style="font-size: 0.8rem; font-weight: 700; color: #94a3b8; margin-bottom: 0.8rem; text-transform: uppercase;">FULLSTACK INTERN • 2021</div>
+                        <p style="font-size: 0.95rem; line-height: 1.6; color: #475569;">GPT-3 feedback summaries and 60x performance optimizations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="projects" style="margin-top: 5rem;">
+            <h2 class="section-title" style="background-color: var(--text-color); color: white; padding: 0.5rem 1.5rem; font-size: 1.8rem;">PROJECTS</h2>
+            <div class="grid">
+                <!-- Project 1: Moral Foundations -->
+                <a href="https://github.com/kraftedcheese/nlp_assignment_2_moralfoundations" class="project-link">
+                    <div class="neo-box card" style="background-color: white; padding: 2.5rem;">
+                        <div>
+                            <div class="date-badge" style="background-color: var(--primary-color);">2026</div>
+                            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Moral Foundations & LLMs</h3>
+                            <p style="color: #64748b; line-height: 1.6;">Investigating if Llama-3-8B can annotate moral content as effectively as humans using demographic personas.</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <span class="badge">LLAMA-3</span>
+                            <span class="badge">NLP</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2: Empathy Detection -->
+                <a href="https://github.com/kraftedcheese/nlp_assignment_1_empathy" class="project-link">
+                    <div class="neo-box card" style="background-color: white; padding: 2.5rem;">
+                        <div>
+                            <div class="date-badge" style="background-color: var(--secondary-color);">2026</div>
+                            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Empathy Detection</h3>
+                            <p style="color: #64748b; line-height: 1.6;">ML classification of empathy levels in online mental health peer support using the EPITOME dataset.</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <span class="badge">XGBOOST</span>
+                            <span class="badge">LINGUISTICS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3: Autonomous Robotics -->
+                <div class="neo-box card" style="background-color: white; padding: 2.5rem;">
+                    <div>
+                        <div class="date-badge" style="background-color: var(--text-color);">2022</div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Autonomous Robotic Inspection</h3>
+                        <p style="color: #64748b; line-height: 1.6;">Computer Vision & AWS deployment for autonomous pavement inspection with Continental Automotive.</p>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <span class="badge">COMPUTER VISION</span>
+                        <span class="badge">AWS</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Singhealth -->
+                <a href="https://github.com/kraftedcheese/ESC_G4_Singhealth" class="project-link">
+                    <div class="neo-box card" style="background-color: white; padding: 2.5rem;">
+                        <div>
+                            <div class="date-badge" style="background-color: var(--accent-color);">2021</div>
+                            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Singhealth Retail Audit</h3>
+                            <p style="color: #64748b; line-height: 1.6;">A PWA digitalizing retail audit processes across Singhealth's hospital network.</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <span class="badge">PWA</span>
+                            <span class="badge">JS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 5: SW-Study -->
+                <a href="https://github.com/kraftedcheese/SW-Study" class="project-link">
+                    <div class="neo-box card" style="background-color: white; padding: 2.5rem;">
+                        <div>
+                            <div class="date-badge" style="background-color: #64748b;">2020</div>
+                            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">SW-Study: Reddit Research</h3>
+                            <p style="color: #64748b; line-height: 1.6;">Digital humanities research project dedicated to the analysis of the r/suicidewatch community on Reddit.</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <span class="badge">DATA SCIENCE</span>
+                            <span class="badge">NLP</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 6: Urban Crowdsensing -->
+                <a href="https://arxiv.org/abs/2012.03057" class="project-link">
+                    <div class="neo-box card" style="background-color: white; padding: 2.5rem;">
+                        <div>
+                            <div class="date-badge" style="background-color: #64748b;">2020</div>
+                            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Urban Crowdsensing Research</h3>
+                            <p style="color: #64748b; line-height: 1.6;">Empirical study on Transformer and Recurrent Neural Networks for crowd level prediction using social media. Published on arXiv.</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <span class="badge">TRANSFORMERS</span>
+                            <span class="badge">PYTORCH</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer style="margin-top: 8rem; text-align: center;">
+            <p style="font-weight: 800; font-size: 0.9rem; letter-spacing: 0.1em; color: #94a3b8;">&copy; 2026 JEROME HENG • BUILT WITH STUTTGART PRECISION</p>
+        </footer>
+    </div>
+</body>
+
 </html>
