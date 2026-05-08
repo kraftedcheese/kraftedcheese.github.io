@@ -19,7 +19,11 @@ body {
   font-family: 'Lexend', sans-serif;
   color: var(--text-color);
   line-height: 1.4;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  body { padding: 4rem 2rem; }
 }
 
 /* Base Components */
@@ -94,11 +98,15 @@ header {
 }
 
 .hero-text h1 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 1.5rem;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 { font-size: 4.5rem; }
 }
 
 .hero-text p {
@@ -151,25 +159,25 @@ body::before {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
+@media (min-width: 900px) {
+  .grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+  }
 }
 
 .card h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .card h3 { font-size: 1.8rem; }
 }
 
 .badge {
