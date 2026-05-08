@@ -4,6 +4,13 @@ email: jeromehenghaoxiang@gmail.com
 description: AI Engineer & Computational Linguist Portfolio
 baseurl: "" 
 url: "https://kraftedcheese.github.io"
+author: Jerome Heng
+logo: assets/images/IMG_20260411_102827.jpg
+social:
+  name: Jerome Heng
+  links:
+    - https://linkedin.com/in/jeromehenghx
+    - https://github.com/kraftedcheese
 
 # Build settings
 plugins:
