@@ -12,82 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     {% seo %}
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hero-image {
-            background-color: var(--primary-color) !important;
-            padding: 0 !important;
-            height: 400px;
-            overflow: hidden;
-            border-radius: 4px;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .date-badge {
-            background-color: var(--text-color);
-            color: white;
-            padding: 0.3rem 0.6rem;
-            font-size: 0.8rem;
-            font-weight: 800;
-            display: inline-block;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 2rem;
-        }
-
-        .bento-hero { grid-column: span 12; padding: 1.5rem !important; }
-        .bento-photo { grid-column: span 12; }
-        .bento-skills { grid-column: span 12; padding: 1.5rem !important; }
-        .bento-experience { grid-column: span 12; padding: 1.5rem !important; }
-
-        @media (min-width: 1000px) {
-            .bento-hero { grid-column: span 8; padding: 3rem !important; }
-            .bento-photo { grid-column: span 4; }
-            .bento-skills { grid-column: span 4; padding: 2.5rem !important; }
-            .bento-experience { grid-column: span 8; padding: 2.5rem !important; }
-        }
-
-        .project-link {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .project-link:hover .card {
-            transform: translate(-4px, -4px);
-            box-shadow: 8px 8px 0px 0px var(--text-color);
-            border-color: var(--primary-color);
-        }
-
-        .badge {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 0.25rem 0.6rem;
-            background-color: #f1f5f9;
-            color: var(--text-color);
-            border: 1px solid #e2e8f0;
-        }
-
-        @media (max-width: 1000px) {
-
-            .bento-hero,
-            .bento-photo,
-            .bento-skills,
-            .bento-experience {
-                grid-column: span 12;
-            }
-        }
-    </style>
+    <!-- Rebuild trigger: 2026-05-09-11-05 -->
 </head>
 
 <body>
@@ -112,12 +37,7 @@
                 <p style="font-size: 1.1rem; font-weight: 400; color: #64748b; max-width: 100%; line-height: 1.5;">Hi,
                     I'm Jerome. I build intelligent systems that understand the world. Currently at the University of
                     Stuttgart, formerly DSTA.</p>
-                <style>
-                    @media (min-width: 768px) {
-                        .bento-hero h1 { font-size: 4rem; }
-                        .bento-hero p { font-size: 1.3rem; max-width: 90%; }
-                    }
-                </style>
+
                 <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.8rem;">
                     <a href="https://linkedin.com/in/jeromehenghx" class="neo-button"
                         style="background-color: var(--text-color); color: white;">LINKEDIN</a>
@@ -151,10 +71,7 @@
             <div class="neo-box bento-experience" style="background-color: white;">
                 <h2 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem;">EXPERIENCE</h2>
                 <div class="exp-grid">
-                    <style>
-                        .exp-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-                        @media (min-width: 768px) { .exp-grid { grid-template-columns: 1fr 1fr; gap: 3rem; } }
-                    </style>
+
                     <div>
                         <div style="font-weight: 900; font-size: 1.1rem; color: var(--primary-color);">DSTA</div>
                         <div
@@ -200,9 +117,7 @@
                 <!-- Project 2: Empathy Detection -->
                 <a href="https://github.com/kraftedcheese/nlp_assignment_1_empathy" class="project-link">
                     <div class="neo-box card" style="background-color: white; padding: 1.5rem;">
-                        <style>
-                            @media (min-width: 768px) { .card { padding: 2.5rem !important; } }
-                        </style>
+
                         <div>
                             <div class="date-badge" style="background-color: var(--secondary-color);">2026</div>
                             <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Empathy Detection</h3>
@@ -234,9 +149,7 @@
                 <!-- Project 4: Singhealth -->
                 <a href="https://github.com/kraftedcheese/ESC_G4_Singhealth" class="project-link">
                     <div class="neo-box card" style="background-color: white; padding: 1.5rem;">
-                        <style>
-                            @media (min-width: 768px) { .card { padding: 2.5rem !important; } }
-                        </style>
+
                         <div>
                             <div class="date-badge" style="background-color: var(--accent-color);">2021</div>
                             <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Singhealth Retail
@@ -254,9 +167,7 @@
                 <!-- Project 5: SW-Study -->
                 <a href="https://github.com/kraftedcheese/SW-Study" class="project-link">
                     <div class="neo-box card" style="background-color: white; padding: 1.5rem;">
-                        <style>
-                            @media (min-width: 768px) { .card { padding: 2.5rem !important; } }
-                        </style>
+
                         <div>
                             <div class="date-badge" style="background-color: #64748b;">2020</div>
                             <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">SW-Study: Reddit
@@ -274,9 +185,7 @@
                 <!-- Project 6: Urban Crowdsensing -->
                 <a href="https://arxiv.org/abs/2012.03057" class="project-link">
                     <div class="neo-box card" style="background-color: white; padding: 1.5rem;">
-                        <style>
-                            @media (min-width: 768px) { .card { padding: 2.5rem !important; } }
-                        </style>
+
                         <div>
                             <div class="date-badge" style="background-color: #64748b;">2020</div>
                             <h3 style="font-size: 1.8rem; margin-bottom: 1rem; line-height: 1.1;">Urban Crowdsensing
